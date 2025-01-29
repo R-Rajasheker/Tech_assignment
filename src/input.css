@@ -89,4 +89,15 @@
     animation: pulse 1.5s infinite;
   }
 
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
 
+  .animate-bounce-custom {
+    animation: bounce 1.85s infinite;
+  }
