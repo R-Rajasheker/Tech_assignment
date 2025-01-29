@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-900  overflow-x-hiddenhidden dark:bg-slate-300">
+   
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-5 flex
+     items-center justify-between z-50">
+     <h1 class="text-4xl font-extrabold text-white  cursor-pointer animate-pulse-custom  dark:text-blue-700">
+        TECHNOVA
+    </h1>
+        <ul class="hidden md:flex items-center gap-6 lg:gap-12 
+        rounded-full px-32 py-3 bg-white shadow-sm bg-opacity-70" >
+       
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#contact">Contact us</a></li>
+
+        </ul>
+       <div class="flex justify items-center gap-3 ">
+        <button onclick="toggleTheme()">
+            <img src="sun (1).png" alt="" class="w-8 dark:hidden " >
+            <img src="moon.png" alt="" class="w-8  hidden dark:block">
+        </button>
+        
+        <button class="block md:hidden " onclick="openMenu()">
+            <img src="menu (1).png" alt="" class=" w-8 dark:hidden"  >
+            <img src="menu (2).png" alt="" class=" w-8 hidden dark:block" >
+        </button>
+       </div>
+         <!-- mobile menue -->
+         <ul id="sidemenu" class="flex md:hidden flex-col py-20 px-10 fixed -right-64 
+         top-0 bottom-0 w-60 z-50 h-screen text-white bg-slate-700 transition duration-500 gap-4 dark:bg-slate-400">
+            <div class="absolute top-4 right-2 cursor-pointer border-white" onclick="closeMenu()">
+                <img src="close (1).png" alt="" class="w-5 mr-6 py-4 ">
+            </div>
+            <li><a href="#home" onclick="closeMenu()">Home</a></li>
+            <li><a href="#services" onclick="closeMenu()">Services</a></li>
+            <li><a href="#about" onclick="closeMenu()">About us</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contacat us</a></li>
+         </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class=" text-white py-48 dark:text-black ">
+        <div></div>
+        <div  class="container mx-auto mb-20 text-center relative z-10">
+           
+            <h2 class="text-4xl md:text-7xl font-extrabold mb-5 drop-shadow-2xl text-shadow-lg  ">Empowering Innovation, Together.</h2>
+            <p class="text-lg  md:text-2xl mb-10 drop-shadow-lg animate-typewriter">Welcome to TechNova, where technology meets creativity to build a brighter future.</p>
+            <a href="#" class="text-white bg-blue-700 font-semibold px-6 py-4 rounded-lg shadow-md hover:bg-blue-600 transition">Get Started</a>
+           
+        </div>
+        <img src="https://plus.unsplash.com/premium_photo-1710514754126-606ceb7291d3?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" 
+        class="absolute inset-1 w-full h-[600px]  object-cover opacity-30 dark:hidden
+         ">
+    </div>
+    </section>
+
+
+    <div id="services" class="mb-2  w-full px-[10%] py-10 scroll-mt-16 ">
+        
+        <h2 class=" text-center text-white text-5xl font-semibold dark:text-black  ">Services we provide</h2>
+
+        <div class=" flex  flex-col lg:flex-row items-center gap-5 ">
+
+            
+            <div class="flex-1">
+                <p class="mb-8 py-10 text-center  max-w-full text-white text-xl dark:text-black ">We provide services like web development, including creating websites, web applications, and portals; AI and machine learning solutions for automation, data analysis, and intelligent decision-making; and cloud services such as 
+                    cloud infrastructure setup, migration, and management to enable scalable and efficient computing..</p>
+
+                <ul class="grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-6xl">
+                    <li class=" text-center border-[0.5px] border-blue-700 rounded-xl p-20 cursor-pointer hover:bg-blue-500 hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#] ">
+                        
+                        <h3 class="   font-semibold text-md lg:text-4xl   text-white dark:text-black  ">Web Design</h3>
+                        
+                    </li>
+
+                    <li class=" text-center border-[0.5px] border-blue-700 rounded-xl p-20 cursor-pointer hover:bg-blue-500 hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#]">
+                        
+                        <h3 class=" font-semibold text-md lg:text-4xl text-white dark:text-black ">AI/ML</h3>
+                        
+                    </li>
+
+                    <li id="projects" class="border-[0.5px] border-blue-700 rounded-xl p-20  hover:bg-blue-500 hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#]">
+                       
+                        <h3 class=" text-center font-semibold text-md lg:text-4xl  text-white dark:text-black ">Cloud Solutions</h3>
+                        
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+     </div>
+
+
+     <div id="about" class=" text-white py-24 dark:text-black ">
+        <h2 class="text-center text-white text-5xl font-semibold dark:text-black ">About Us</h2>
+        <div class="max-w-6xl mx-auto">
+          <!-- Heading Section -->
+          <h2 class="text-2xl md:text-3xl font-semibold text-center py-8">
+            Powered by a global team of 2000+ innovative and skilled professionals across 5 countries, we deliver cutting-edge technology solutions, smarter business strategies,
+             and transformative digital experiences to help our stakeholders thrive in the ever-evolving tech landscape
+          </h2>
+          
+          <!-- Stats Section -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+            <!-- Stat Item 1 -->
+            <div>
+              <h3 class="text-4xl font-bold text-blue-700">20+</h3>
+              <p class="mt-2 text-gray-400 dark:text-black ">Delivery Centers</p>
+            </div>
+            <!-- Stat Item 2 -->
+            <div>
+              <h3 class="text-4xl font-bold text-blue-700">6+</h3>
+              <p class="mt-2 text-gray-400 dark:text-black ">Innovation Labs</p>
+            </div>
+            <!-- Stat Item 3 -->
+            <div>
+              <h3 class="text-4xl font-bold text-blue-700">2K</h3>
+              <p class="mt-2 text-gray-400 dark:text-black ">Clients using our software and products</p>
+            </div>
+            <!-- Stat Item 4 -->
+            <div>
+              <h3 class="text-4xl font-bold text-blue-700">20+</h3>
+              <p class="mt-2 text-gray-400 dark:text-black ">Patents driving innovation</p>
+            </div>
+            <!-- Stat Item 5 -->
+            <div>
+              <h3 class="text-4xl font-bold text-blue-700">17</h3>
+              <p class="mt-2 text-gray-400 dark:text-black ">Top employer in seventeen countries</p>
+            </div>
+            <!-- Stat Item 6 -->
+            <div>
+              <h3 class="text-4xl font-bold text-blue-700">50K</h3>
+              <p class="mt-2 text-gray-400 dark:text-black ">Lives impacted by TechNova Foundation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  <!-- contact  -->
+  <div id="contact" class="xl:px-[8%] py-24">
+    <h4 class=" text-center mb-2 text-5xl font-semibold text-white dark:text-black ">Contact Us</h4>
+    <div  class="scroll-mt-24  mb-16 items-center flex flex-col lg:flex-row gap-5">
+        <div  class="flex-1 ">
+        
+          <form method="post" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+
+            <input type="hidden" name="access_key" value="475766c3-aac3-4854-af5d-ac712fa13c07">
+           <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
+            <input type="text" placeholder="Enter your name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required name="name">
+            <input type="email" placeholder="Enter your email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required name="email">
+           </div>
+           <textarea rows="9" placeholder="Enter your message" class="w-full p-5 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6" required name="message"></textarea>
+           <button class="py-3 px-8 w-max flex items-center justify-between gap-2 text-white bg-blue-700 rounded-lg mx-auto hover:bg-blue-600 duration-500 ">Submit</button>
+          </form>
+        </div>
+        <div class="flex-1 justify-center items-center py-5 ">
+            
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497512.5774666652!2d79.8789972744753!3d13.047316853415884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1738057786406!5m2!1sen!2sin" 
+              class="w-[600px] h-[300px] rounded-md" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+              
+            </iframe>
+          </div>
+        </div>
+      </div>
+          
+      <footer class=" text-gray-300 py-10 dark:text-black">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- Top Section: Links -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <!-- About Section -->
+            <div>
+              <h3 class="text-white text-xl font-semibold mb-4 dark:text-black">About Us</h3>
+              <p class="text-gray-400 text-sm dark:text-blac dark:text-black">
+                We are a leading tech solutions provider, delivering innovative web development, AI/ML solutions, and cloud services to help businesses thrive in the digital era.
+              </p>
+            </div>
+      
+            <!-- Quick Links -->
+            <div>
+              <h3 class="text-white text-xl font-semibold mb-4 dark:text-black">Quick Links</h3>
+              <ul>
+                <li><a href="#" class="hover:text-white text-sm dark:text-black">Home</a></li>
+                <li><a href="#" class="hover:text-white text-sm dark:text-blac">About Us</a></li>
+                <li><a href="#" class="hover:text-white text-sm dark:text-black">Services</a></li>
+                <li><a href="#" class="hover:text-white text-sm dark:text-black">Contact</a></li>
+              </ul>
+            </div>
+      
+            <!-- Services -->
+            <div>
+              <h3 class="text-white text-xl font-semibold mb-4 dark:text-black">Our Services</h3>
+              <ul>
+                <li><a href="#" class="hover:text-white text-sm dark:text-black">Web Development</a></li>
+                <li><a href="#" class="hover:text-white text-sm dark:text-black">AI & Machine Learning</a></li>
+                <li><a href="#" class="hover:text-white text-sm dark:text-black">Cloud Solutions</a></li>
+               
+              </ul>
+            </div>
+      
+            <!-- Contact Us -->
+            <div>
+              <h3 class="text-white text-xl font-semibold mb-4 dark:text-black">Contact Us</h3>
+              <ul class="text-sm">
+                <li class="mb-2"><span class="font-medium">Email:</span> mrroddarajashekar@gmail.com</li>
+                <li class="mb-2"><span class="font-medium">Phone:</span> +91 9347345700</li>
+                <li class="mb-2"><span class="font-medium">Address:</span> semmencheri,Dlf Gardencity,Chennai</li>
+              </ul>
+            </div>
+          </div>
+      
+          <!-- Bottom Section: Copyright and Socials -->
+          <div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
+            <!-- Copyright -->
+            <p class="text-sm text-gray-400 dark:text-black">
+              © 2025 TechNova. All Rights Reserved.
+            </p>
+      
+            <!-- Social Icons -->
+            <div class="flex space-x-4 mt-4 md:mt-0">
+              <a href="#" class="text-gray-400 hover:text-white dark:text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.225 0h-20.449c-.975 0-1.776.801-1.776 1.776v20.449c0 .975.801 1.776 1.776 1.776h11.019v-8.873h-2.985v-3.453h2.985v-2.548c0-2.966 1.809-4.585 4.451-4.585 1.267 0 2.361.094 2.677.137v3.105h-1.838c-1.444 0-1.725.686-1.725 1.695v2.196h3.446l-.449 3.453h-2.997v8.873h5.874c.975 0 1.776-.801 1.776-1.776v-20.449c0-.975-.801-1.776-1.776-1.776z"/></svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white dark:text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.799-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.956-2.173-1.555-3.591-1.555-2.719 0-4.92 2.201-4.92 4.917 0 .386.044.763.127 1.124-4.087-.205-7.713-2.163-10.141-5.144-.424.729-.666 1.577-.666 2.483 0 1.71.87 3.214 2.19 4.096-.806-.026-1.566-.247-2.228-.616v.062c0 2.388 1.697 4.384 3.946 4.835-.413.112-.849.172-1.296.172-.317 0-.626-.03-.927-.086.627 1.956 2.444 3.379 4.599 3.419-1.68 1.316-3.809 2.102-6.114 2.102-.398 0-.79-.023-1.175-.069 2.181 1.399 4.768 2.213 7.548 2.213 9.057 0 14.01-7.512 14.01-14.01 0-.213-.004-.426-.013-.637.962-.694 1.797-1.562 2.457-2.549z"/></svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white dark:text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3h-15.23c-1.297 0-2.385 1.088-2.385 2.385v13.23c0 1.297 1.088 2.385 2.385 2.385h15.23c1.297 0 2.385-1.088 2.385-2.385v-13.23c0-1.297-1.088-2.385-2.385-2.385zm-9.154 15.539h-2.308v-6.154h2.308v6.154zm-1.154-7.077c-.739 0-1.231-.547-1.231-1.231 0-.68.492-1.231 1.231-1.231.739 0 1.231.551 1.231 1.231-.001.684-.493 1.231-1.231 1.231zm10.308 7.077h-2.308v-3.231c0-.739-.551-1.231-1.231-1.231-.739 0-1.231.492-1.231 1.231v3.231h-2.308v-6.154h2.308v.924c.615-.985 1.847-1.231 2.616-1.231 1.23 0 2.154.924 2.154 2.231v4.231z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+       
+     
+
+
+      
+    
+    <script src="./script.js"></script>
+</body>
+</html>
